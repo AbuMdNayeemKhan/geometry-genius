@@ -1,10 +1,15 @@
 function calculateTriangleArea(){
     let triangleBaseInput = document.getElementById('triangle-base');
-    let triangleHeightInput = document.getElementById('triangle-height');
     let baseValue = triangleBaseInput.value;
+    let baseValueCon = parseFloat(baseValue);
+
+    let triangleHeightInput = document.getElementById('triangle-height');
     let heihgtValue = triangleHeightInput.value;
-    let vaseValueCon = parseFloat(baseValue);
     let heightValueCon = parseFloat(heihgtValue);
-    console.log(vaseValueCon);
-    console.log(heightValueCon);
+
+    let triangleArea = 0.5 * baseValueCon * heightValueCon;
+    let trianglePrint = document.getElementById('trianglePrint');
+
+    trianglePrint.innerText = triangleArea;
+
 }
