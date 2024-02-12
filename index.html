@@ -21,13 +21,13 @@
                 <h2 class="text-2xl">Triangle</h2>
                 <p>area = 0.5 x b x h</p>
                 <div class="flex mb-3">
-                    <input class="w-full" type="text" placeholder="b">
+                    <input id="triangle-base" class="w-full" type="text" placeholder="b">
                     <span class="w-full">cm</span>
-                    <input class="w-full" type="text" placeholder="h">
+                    <input id="" class="w-full" type="text" placeholder="h">
                     <span class="w-full">cm</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn btn-primary w-full">Buy Now</button>
+                    <button class="btn btn-primary w-full" onclick="calculateTriangleArea()">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -78,5 +78,8 @@
     </div>
     <!-- area calculation ended -->
 </div>
+
+<!-- script link -->
+<script src="scripts/triangle.js"></script>
 </body>
 </html>

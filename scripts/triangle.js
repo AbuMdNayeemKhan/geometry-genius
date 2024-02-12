@@ -1,3 +1,4 @@
 function calculateTriangleArea(){
-    console.log('clicked');
+    let triangleBaseInput = document.getElementById('triangle-base');
+    console.log('clicked')
 }
