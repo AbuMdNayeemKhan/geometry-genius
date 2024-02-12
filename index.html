@@ -10,21 +10,29 @@
 
     <title>Geometry Genius</title>
 </head>
-<body>
+<body class="m-4">
+<div class="flex flex-col md:flex-row">
     <!-- card section start -->
-    <div>
-        <!-- single card start -->
+    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- triangle card start -->
         <div class="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-            <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+            <figure><img src="images/triangle.png" alt="triangle" /></figure>
+            <div class="card-body text-center">
+                <h2 class="text-2xl">Triangle</h2>
+                <p>area = 0.5 x b x h</p>
+                <div class="flex mb-3">
+                    <input class="w-full" type="text" placeholder="b">
+                    <span class="w-full">cm</span>
+                    <input class="w-full" type="text" placeholder="h">
+                    <span class="w-full">cm</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-primary w-full">Buy Now</button>
                 </div>
             </div>
         </div>
-        <!-- single card ended -->
+        <!-- triangle card ended -->
+        
         <!-- single card start -->
         <div class="card w-96 bg-base-100 shadow-xl">
             <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
@@ -63,5 +71,12 @@
         <!-- single card ended -->
     </div>
     <!-- card section ended -->
+
+    <!-- area calculation start -->
+    <div class="w-96 border-2 border-gray-700 rounded-md">
+        <h3 class="text-3xl">Area calculation</h3>
+    </div>
+    <!-- area calculation ended -->
+</div>
 </body>
 </html>
